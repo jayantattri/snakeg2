@@ -1,0 +1,126 @@
+/* Apply styles to the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://codetheworld.io/wp-content/uploads/2024/09/hero-bg.jpg') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Wrapper for centering the form */
+.wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Form heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input field container */
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s ease;
+}
+
+/* Move label when typing */
+.input-field input:focus + label,
+.input-field input:valid + label {
+    top: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Remember me and Forgot password */
+.forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.forget label {
+    display: flex;
+    align-items: center;
+}
+
+.forget input {
+    margin-right: 5px;
+}
+
+.forget a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+/* Register link */
+.register {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register a {
+    color: #ff4b2b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
